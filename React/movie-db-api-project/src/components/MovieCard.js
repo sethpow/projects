@@ -45,7 +45,6 @@ export default function MovieCard({movie}) {
             />
             <br/>
             <MovieDetails/>
-            {/* <Favorite/> */}
             <div>
                 <button onClick={favorite}>{`${favorited === false ? '♡' : '❤️'}`}</button>
                 {favorited === true ? <p className='status'>{'Saved!'}</p> : <p></p>}
@@ -53,18 +52,4 @@ export default function MovieCard({movie}) {
         </div>
     </div>
     )
-    
-    // const Favorite = () => {
-    //     const [favorited, setFavorited] = useState(false)
-
-    //     const onClick = () => {
-    //         setFavorited(favorited === false ? true : false)
-    //     }
-            
-    //     return (
-    //         <div>
-    //             <button onClick={onClick}>{`${favorited === false ? '♡' : '❤️'}`}</button>
-    //             {favorited === true ? <p className='status'>{'Saved!'}</p> : <p></p>}
-    //         </div>
-    //     )
 }
