@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(184, 184, 184);
+    color: rgb(39, 39, 39);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.LightTheme{
+    background-color: rgb(184, 184, 184);
+    color: rgb(39, 39, 39);
+}
+.DarkTheme{
+    background-color: rgb(39, 39, 39);
+    color: rgb(184, 184, 184);
+}
+.header{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.searchForm{
+    display: grid;
+    margin-top: 50px;
+}
+.card{
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    background-color: blanchedalmond;
+    color: black;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    width: 500px;
+}
+input{
+    font-size: 25px;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+button{
+    margin-top: 15px;
+    background-color: rgb(216, 216, 216);
+    color: rgb(48, 48, 48);
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.homeTitle{
+    text-align: center;
+}
+.navBar{
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.profile{
+    text-align: center;
+    margin-top: 50px;
+}
+.status{
+    opacity: 0;
+    transition:opacity 2000ms;
+}
+
+@media(min-width: 800px){
+    .searchForm{
+        grid-template-columns: auto 1fr auto;
+    }
+}
