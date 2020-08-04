@@ -55,6 +55,4 @@ lower_frame.place(relx=.5, rely=.25, relwidth=.75, relheight=.6, anchor='n')
 label = tk.Label(lower_frame, font=('Courier', 30))
 label.place(relwidth=1, relheight=1)
 
-print(tk.font.families())
-
 root.mainloop()
